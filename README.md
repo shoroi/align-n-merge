@@ -14,7 +14,7 @@ The core of this repo was adapted from
 . We have also imported and adapted code from 
 [Git Re-Basin](https://github.com/samuela/git-re-basin) [(Ainsworth et al., ICLR 2023)](https://openreview.net/forum?id=CQsmMYmlP5T)
 and
-[OT Fusion](https://github.com/sidak/otfusion) [(Singh & Jaggi, NeurIPS 2020)](https://proceedings.neurips.cc/paper/2020/hash/
+[OT Fusion](https://github.com/sidak/otfusion) [(Singh & Jaggi, NeurIPS 2020)](https://proceedings.neurips.cc/paper/2020/file/fb2697869f56484404c8ceee2985b01d-Review.html)
 to provide a unified PyTorch implementation of these methods allowing fast and easy comparisons. We thank the authors of these works for making their code publicly available.
 
 Our code may differ from that of the original repositories since we have integrated them into a unified framework; for instance, the original Git Re-Basin code uses Jax while our implementation is in PyTorch. Despite this, we have attempted to faithfully replicate the original processes of alignment and merging. Our adaptation does not necessarily include every functionality from the original repositories.
