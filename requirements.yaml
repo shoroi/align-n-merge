@@ -1,0 +1,30 @@
+name: align-n-merge
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  - python=3.7
+  - pip
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - pytorch::torchaudio
+  - tqdm
+  - matplotlib
+  - pandas
+  - pyyaml
+  - scikit-learn
+  - fvcore
+  - einops=0.6.1
+  - networkx
+  - timm
+  - pygraphviz
+  - wcwidth=0.2.6
+  - iopath
+  - nvidia::cudatoolkit
+  - ipykernel=6.15.2
+  - ipython=7.31.1
+  - pot=0.8.2
+  - pip:
+    - git+https://github.com/openai/CLIP.git@d50d76daa670286dd6cacf3bcd80b5e4823fc8e1
