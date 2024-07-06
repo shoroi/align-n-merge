@@ -10,7 +10,7 @@ from copy import deepcopy
 
 from core.utils import *
 from core.model_merger import ModelMerge
-from core.multi_model_merging.base_model_concept_merging import get_config_from_exp_dir, modify_none_model_set
+from evaluation.base_ensemble_eval import get_config_from_exp_dir, modify_none_model_set
 from evaluation.weight_matching_resnets import *
 
 
