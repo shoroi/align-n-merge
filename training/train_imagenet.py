@@ -86,7 +86,7 @@ parser.add_argument('--multiprocessing-distributed', action='store_true',
                          'multi node data parallel training')
 
 
-parser.add_argument('--save-dir', default='/home/mila/h/horoiste/scratch/zipit_data/checkpoints/imagenet',
+parser.add_argument('--save-dir', default=os.path.expanduser('~/data'),
                     help='path to save models')
 parser.add_argument('--data-split', type=str, default='none',
                     help='How to split the dataset. Choices: none, unbalanced, classes, 80-20, subset-#classes')

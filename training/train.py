@@ -16,7 +16,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Train a vision model on a given dataset.")
     parser.add_argument('--base-save-dir',
                         type=str,
-                        default='/home/mila/h/horoiste/scratch/zipit_data/checkpoints/multi_model_merging')
+                        default=os.path.expanduser('~/data'))
     parser.add_argument('--dataset',
                         type=str,
                         default='cifar100',
