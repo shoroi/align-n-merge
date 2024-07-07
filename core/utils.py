@@ -16,7 +16,7 @@ from torch.nn import CrossEntropyLoss
 from torch.optim import SGD, Adam, lr_scheduler
 from fvcore.nn.flop_count import flop_count
 from inspect import getmembers, isfunction
-from metric_calculators import get_metric_fns
+from core.metric_calculators import get_metric_fns
 import torch.nn.functional as F
 import clip
 import einops
