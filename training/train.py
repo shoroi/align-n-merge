@@ -156,14 +156,14 @@ if __name__ == "__main__":
     if args.dataset == 'cifar100':
         normalize = T.Normalize([0.5071, 0.4867, 0.4408], [0.2675, 0.2565, 0.2761])
 
-        data_dir = './data/cifar-100-python'
+        data_dir = './data/datasets/cifar-100-python'
         wrapper = torchvision.datasets.CIFAR100
         num_classes = 100
 
     elif args.dataset == 'cifar10':
         normalize = T.Normalize([0.4914, 0.4822, 0.4465], [0.2470, 0.2435, 0.2616])
 
-        data_dir = './data/cifar-10-python'
+        data_dir = './data/datasets/cifar-10-python'
         wrapper = torchvision.datasets.CIFAR10
         num_classes = 10
 
