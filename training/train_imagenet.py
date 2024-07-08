@@ -25,7 +25,6 @@ from torch.optim.lr_scheduler import StepLR, LambdaLR
 from torch.utils.data import Subset
 
 from models.resnets import resnet20
-from models.simple_vit import SimpleViT
 from torch.optim.lr_scheduler import _LRScheduler
 from torch.cuda.amp import autocast, GradScaler
 
@@ -266,15 +265,6 @@ def main_worker(gpu, train_dataset, val_dataset, split_idx, ngpus_per_node, args
     if 'resnet20' in args.arch:
         model = resnet20(w=args.width, num_classes=1000).cuda().train()
         print('Using custom ResNet20', flush=True)
-    elif 'vit' in args.arch:
-        model = SimpleViT(
-                image_size=224,
-                patch_size=32,
-                num_classes=1000,
-                dim=1024,
-                depth=6,
-                heads=16,
-                mlp_dim=2048).cuda().train()
     else:
         if args.pretrained:
             print("=> using pre-trained model '{}'".format(args.arch), flush=True)
